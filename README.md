@@ -24,17 +24,12 @@ This is a suite of simple tools to help the user to Handle Darshan Data without 
 The PDF file will be created in the folder 
 
 ```
-experiments/year/month/executable/ (v0.2)
-```
-or
-
-```
 experiments/executable/year/month/ (development)
 ```
 
 #### Tool Compare Darshan
 
-* Available with release v0.3 and afterwards
+* Available with release v1.0 and afterwards
 
 * Dependency on PDFjam software
 
@@ -77,6 +72,6 @@ The scripts were tested with CRAY-XC40 ShaheenII and Darshan v2.3.1
 
 ### ToDo
 
-- [X] Automatic organization into folders (v0.2 and afterwards)
+- [X] Automatic organization into folders (v1.0 and afterwards)
 - [ ] Adapt with newer Darshan version
 
