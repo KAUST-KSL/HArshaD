@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+markdown: kramdown
+title: HArshaD (Handle Darshan Data)
+releases: 0.1
+gems:
+  - jekyll-sitemap

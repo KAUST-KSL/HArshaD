@@ -1,37 +1,82 @@
-## Welcome to GitHub Pages
+## Welcome to HArshaD
 
-You can use the [editor on GitHub](https://github.com/KAUST-KSL/HArshaD/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a suite of simple tools to help the user to Handle Darshan Data without being familiar exactly with specific commands.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Instructions
 
-### Markdown
+* Connect to the system with ```ssh -Y```
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Tool Open Darshan
 
-```markdown
-Syntax highlighted code block
+* Edit the script open_darshan.sh and declare for the variable darshan_path the path where the logs are saved
 
-# Header 1
-## Header 2
-### Header 3
+* To load Darshan data for your last experiment on the **same** day, execute 
 
-- Bulleted
-- List
+```
+./open_darshan.sh
+```
+* To load darshan data from specific job, execute 
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+./open_darshan.sh job_id
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+The PDF file will be created in the folder 
 
-### Jekyll Themes
+```
+experiments/year/month/executable/ (v0.2)
+```
+or
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KAUST-KSL/HArshaD/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+experiments/executable/year/month/ (development)
+```
 
-### Support or Contact
+#### Tool Compare Darshan
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* Available with release v0.3 and afterwards
+
+* Dependency on PDFjam software
+
+  * [Download PDFjam](http://freecode.com/urls/f25b51928fce8fe1fb55c071e45580ce)
+
+  * Use the executable in the bin folder. We do not support this software 
+
+* Edit the script compare_darshan.sh and declare for the variable darshan_path the path where the logs are saved
+
+* To compare the Darshan data of two jobs with job_id1 and job_id2, execute 
+
+```
+./compare_darshan.sh job_id1 job_id2
+```
+
+Example of one single PDF:
+
+![comparison](https://github.com/gmarkomanolis/HArshaD/blob/master/files_for_readme/comparison_darshan_example.png?raw=true)
+
+### Releases
+
+{% for relea in site.github.releases %}
+
+**Version**: {{ relea.tag_name }} 
+
+Date: {{ relea.published_at }}
+
+Changelog: 
+
+{{ relea.body }}
+
+[Download]({{ relea.tarball_url }}) 
+
+{% endfor %}
+
+
+### Testbed platform
+
+The scripts were tested with CRAY-XC40 ShaheenII and Darshan v2.3.1
+
+### ToDo
+
+- [X] Automatic organization into folders (v0.2 and afterwards)
+- [ ] Adapt with newer Darshan version
+
