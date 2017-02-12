@@ -24,7 +24,7 @@ This is a suite of simple tools to help the user to Handle Darshan Data without 
 The PDF file will be created in the folder 
 
 ```
-experiments/executable/year/month/ (development)
+experiments/executable/year/month/ 
 ```
 
 #### Tool Compare Darshan
