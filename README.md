@@ -4,11 +4,11 @@ This is a suite of simple tools to help the user to Handle Darshan Data without 
 
 ### Instructions
 
-* Download: git clone git clone https://github.com/KAUST-KSL/HArshaD.git
-
 * Connect to the system with ```ssh -Y```
 
 #### Tool Open Darshan
+
+* Download: git clone git clone https://github.com/KAUST-KSL/HArshaD.git
 
 * Edit the script open_darshan.sh and declare for the variable darshan_path the path where the logs are saved
 
