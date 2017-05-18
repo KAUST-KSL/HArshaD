@@ -77,3 +77,5 @@ The scripts were tested with CRAY-XC40 ShaheenII and Darshan v2.3.1
 - [X] Automatic organization into folders (v1.0 and afterwards)
 - [ ] Adapt with newer Darshan version
 
+For questions contact georgios.markomanolis@kaust.edu.sa
+
