@@ -9,7 +9,7 @@
 
 #!/bin/bash -x
 
-darshan_ver=`module avail --long 2>&1 | grep darshan | grep default | awk -F "[/ .]" '{print $2}'`
+darshan_ver=`module avail --long 2>&1 | grep darshan/ | tail -n 1 | awk -F "[/ .]" '{print $2}'`
 name=`hostname`
 
 if [[ $name == *"cori"* ]]; then
