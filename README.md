@@ -47,6 +47,10 @@ experiments/executable/year/month/
 ./compare_darshan.sh job_id1 job_id2
 ```
 
+* Available with release v2.0 and afterwards:
+
+Support of Darshan 3.x
+
 Example of one single PDF:
 
 ![comparison](https://github.com/gmarkomanolis/HArshaD/blob/master/files_for_readme/comparison_darshan_example.png?raw=true)
