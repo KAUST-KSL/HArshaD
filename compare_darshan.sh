@@ -20,7 +20,7 @@ module load latex
 
 elif [[ $name == *"cdl"* ]]; then  
 export darshan_path="/project/logs/darshan/"
-module load latex
+module load texlive/2017
 
 fi
 
